@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Assignement 2 - SCIENCE</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+
+
+
+	<body>
+		<header>
+			<p id="title">Let's Play "Prime"</p>
+			<div>
+				<ul id="options">
+					<li>
+						<a href="">Home</a>
+					</li>
+					<li>
+						<a href="">Sections</a>
+					</li>
+					<li>
+						<a href="">About</a>
+					</li>
+					<li>
+						<a href="">Help</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<nav id="menu">
+			<h2>Prime Menu</h2>
+			<ul>
+				<a href=""><li>Prime it</li></a>
+				<a href=""><li>Cryptography</li></a>
+				<a href=""><li>Generating Random Numbers</li></a>
+				<a href=""><li>Number Theory</li></a>
+				<a href=""><li>Data Structures and Algorithms</li></a>
+				<a href=""><li>Error Detection and Correction</li></a>
+				<a href=""><li>Generating Unique Identifiers</li></a>
+				<a href=""><li>Pseudorandom Number Generators</li></a>
+				<a href=""><li>Research and Exploration</li></a>
+			</ul>
+		</nav>
+
+		<article>
+			<h1>Prime It!</h1>
+			<p>Enter a number, and we will let you know if it is a prime.</p>
+			<div id="focus">
+				<input type="text" id="textInput">
+				<button onclick="round()">Verify</button>
+			</div>
+			<p id="statement"></p>
+		</article>
+
+		<div id="ad">
+			<p>Advertisement</p>
+			<a href="https://www.amazon.com/WARMHAND-Rechargeable-Upgraded-Portable-Electric/dp/B0CJDVR89X/?_encoding=UTF8&pd_rd_w=glFCb&content-id=amzn1.sym.64be5821-f651-4b0b-8dd3-4f9b884f10e5&pf_rd_p=64be5821-f651-4b0b-8dd3-4f9b884f10e5&pf_rd_r=MD65SZFRJJ0988MFZG5F&pd_rd_wg=RhDwH&pd_rd_r=aa336fcd-c18a-4359-90a0-6348003ab3d6&ref_=pd_gw_crs_zg_bs_3375251"><img src="im.jpeg" class="adpics" alt="Hand Warmers Rechargeable 2 Pack">
+			<p>Hand Warmers Rechargeable 2 Pack -Amazon-</p>
+			</a>
+		</div>
+
+	    <footer>
+	    	<h2>Addendum</h2>
+	    	<p>
+	    		With my JavaScript, I wanted to stay simple and just implement something that would do some math calculations whenever the user clicks a button. Since we had to solve a problem, I decided to go for an algorithm that could help us find prime numbers. It was pretty straightforward. With an if statement, I was able to eliminate integers that are less or equal to one. Then, I eliminated all numbers that are divisible by any numbers other than one and itself. From there, everything was easy: I made a function that my 'verify' button is gonna call whenever clicked. The goal of that function is to read what is inputted in the text box, to make sure the text input is an integer, to check if the inputted numbers are prime, and to display a text for the user.
+	    	</p>
+	        <p>Last updated: 
+	            <span id="lastModified"></span>
+	        </p>
+	    </footer>
+	    <script type="text/javascript">
+	         var x = document.lastModified;
+	         document.getElementById('lastModified').textContent = x;
+	    </script>
+		<script type="text/javascript" src="my_script.js"></script>
+	</body>
+</html>
